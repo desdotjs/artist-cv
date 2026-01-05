@@ -1,0 +1,22 @@
+const colors = [
+  "rgb(6, 193, 0)",
+  "rgb(75, 68, 255)",
+  "rgb(255, 250, 68)",
+  "rgb(242, 137, 0)",
+  "rgb(230, 20, 20)",
+  "rgb(38, 191, 255)",
+  "rgb(198, 38, 255)"
+];
+
+let storedIndex = localStorage.getItem("colors");
+
+let index = storedIndex === null ? 0 : Number(storedIndex);
+
+document.body.style.backgroundColor = colors[index];
+// document.body.style.backgroundColor is used in vanilla JS - "canvas" is a p5 thing (which was removed, the library was fucking it up)
+
+index++;
+
+if (index >= colors.length) index = 0;
+
+localStorage.setItem("colors", index);

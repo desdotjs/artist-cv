@@ -11,9 +11,10 @@ const colors = [
 let storedIndex = localStorage.getItem("colors");
 
 let index = storedIndex === null ? 0 : Number(storedIndex);
+// check whether storedIndex is null. if it is, start index at 0. if it isn’t, turn storedIndex into a number and assign it to index
 
 document.body.style.backgroundColor = colors[index];
-// document.body.style.backgroundColor is used in vanilla JS - "canvas" is a p5 thing (which was removed, the library was fucking it up)
+// document.body.style.backgroundColor is used in vanilla JS - "canvas" is a p5 thing
 
 index++;
 

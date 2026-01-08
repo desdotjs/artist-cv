@@ -4,6 +4,7 @@ body {
   font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
   color: #000;
+  background-color: rgb(6, 193, 0);
 
   display: grid;
   margin: 0 auto;

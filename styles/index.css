@@ -16,7 +16,8 @@ body {
   display: grid; 
   /* for celled / forum-like feel */
   /* no inline... inline-grid makes cell behave like text, just "grid" makes cells behave as a page section */
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: minmax(0,4fr) minmax(0, 1fr);
+  /* minmax prevents overflow on small screens */
   grid-template-rows: auto 1fr;
   /* fr means "fractional unit" -  */
   /* so, 5 shares of space - could use percentages, but fr calculates automatically */
@@ -91,6 +92,29 @@ ul {
   top: 50%;
 
   grid-area: right;
+
+}
+
+@media (max-width: 600px) {
+
+  .left-cell,
+  .right-cell {
+
+    width: auto;
+
+  }
+
+  .page-grid {
+
+    grid-template-columns: minmax(0,4fr) minmax(0, 1fr);
+
+  }
+
+  body {
+
+    overflow-x: hidden;
+
+  }
 
 }
 

@@ -7,7 +7,7 @@ body {
 
   display: grid;
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: none;
 
 }
 
@@ -35,6 +35,13 @@ h1 {
 
 }
 
+h4 {
+
+  margin-bottom: 1px;
+
+}
+
+
 /* paragraphs */
 p {
 
@@ -54,11 +61,6 @@ ul {
 
 }
 
-/* .nav {
-
-
-
-} */
 
 .header-img {
 
@@ -71,8 +73,8 @@ ul {
 /* left container / column */
 .left-cell {
 
-  width: 90%;
-  margin: 0 auto;
+  width: 35%;
+  padding-left: 100px;
   text-align: left;
 
   grid-area: left;
@@ -100,5 +102,11 @@ ul {
 
   grid-area: footer;
 
+}
+
+hr.divider {
+  all: unset;
+  border-top: 1px solid #000;
+  margin: 12px 0;
 }
 

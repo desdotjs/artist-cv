@@ -95,29 +95,6 @@ ul {
 
 }
 
-@media (max-width: 600px) {
-
-  .left-cell,
-  .right-cell {
-
-    width: auto;
-
-  }
-
-  .page-grid {
-
-    grid-template-columns: minmax(0,4fr) minmax(0, 1fr);
-
-  }
-
-  body {
-
-    overflow-x: hidden;
-
-  }
-
-}
-
 .footer {
 
   width: 90%;

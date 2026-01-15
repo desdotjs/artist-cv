@@ -131,11 +131,12 @@ ul {
 
   .left-cell {
 
-    width: 70%;
-    margin: 20px;          /* remove large desktop margin */
+    width: 100%;
+    margin: 0;          /* remove large desktop margin */
     padding: 1rem;      /* small padding for breathing room */
-    position: sticky;  
-    overflow: hidden;
+    position: static; 
+      /* sticky doesnt work on mobile really  */
+    overflow: visible;
 
   }
 
@@ -145,7 +146,8 @@ ul {
     position: static;
     width: 100%;
     text-align: right;
-    margin: 0 0 1rem 0; /* small bottom spacing */
+    margin: 0;
+    padding: 1rem;
     
   }
 

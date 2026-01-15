@@ -74,11 +74,13 @@ ul {
 /* left container / column */
 .left-cell {
 
-  width: 35%;
-  padding-left: 100px;
+  width: 50%;
+  margin: 100px;
   text-align: left;
-
   grid-area: left;
+  position: sticky;
+  overflow-x: hidden;
+  justify-content: left;
 
 }
 
@@ -111,5 +113,49 @@ ul {
   padding: 50px;
 
   grid-area: footer;
+
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+
+  /* Make the page grid single-column */
+  .page-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "top"
+      "left"
+      "footer";
+  }
+
+  /* Left cell takes full width, no big margins */
+
+  .left-cell {
+
+    width: 100%;
+    margin: 0;          /* remove large desktop margin */
+    padding: 1rem;      /* small padding for breathing room */
+    position: static;   /* disable sticky on mobile */
+
+  }
+
+  /* Nav menu becomes inline at top */
+  .nav-menu {
+
+    position: static;
+    width: 100%;
+    text-align: left;
+    margin: 0 0 1rem 0; /* small bottom spacing */
+    
+  }
+
+  /* Footer adjustments (optional) */
+  .footer {
+
+    width: 100%;
+    padding: 2rem 1rem;
+
+  }
 
 }

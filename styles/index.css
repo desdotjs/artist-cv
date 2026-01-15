@@ -120,7 +120,7 @@ ul {
 
 @media (max-width: 768px) {
 
-  /* Make the page grid single-column */
+  /*single-column */
   .page-grid {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -129,15 +129,13 @@ ul {
       "footer";
   }
 
-  /* Left cell takes full width, no big margins */
-
   .left-cell {
 
     width: 70%;
     margin: 20px;          /* remove large desktop margin */
     padding: 1rem;      /* small padding for breathing room */
     position: sticky;  
-    overflow-x: hidden;
+    overflow: hidden;
 
   }
 
@@ -146,7 +144,7 @@ ul {
 
     position: static;
     width: 100%;
-    text-align: left;
+    text-align: right;
     margin: 0 0 1rem 0; /* small bottom spacing */
     
   }

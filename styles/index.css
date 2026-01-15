@@ -134,9 +134,10 @@ ul {
   .left-cell {
 
     width: 100%;
-    margin: 0;          /* remove large desktop margin */
+    margin: 20px;          /* remove large desktop margin */
     padding: 1rem;      /* small padding for breathing room */
-    position: static;   /* disable sticky on mobile */
+    position: sticky;  
+    overflow-x: hidden;
 
   }
 

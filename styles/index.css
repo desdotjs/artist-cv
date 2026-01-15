@@ -133,7 +133,7 @@ ul {
 
   .left-cell {
 
-    width: 100%;
+    width: 70%;
     margin: 20px;          /* remove large desktop margin */
     padding: 1rem;      /* small padding for breathing room */
     position: sticky;  

@@ -75,21 +75,7 @@ ul {
   width: 90%;
   margin: 0 auto;
   text-align: left;
-
   grid-area: left;
-
-}
-
-.right-cell {
-
-  width: 90%;
-  margin: 0 auto;
-  flex-direction: column;
-  text-align: right;
-  position: fixed; /* static, relative, fixed, sticky, absolute */
-  top: 50%;
-
-  grid-area: right;
 
 }
 

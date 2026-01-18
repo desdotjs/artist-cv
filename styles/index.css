@@ -24,7 +24,7 @@ body {
   grid-template-areas: 
 
   "top top"
-  "left"
+  "left left"
   "footer footer"
 
 }
@@ -120,13 +120,39 @@ ul {
 
 @media (max-width: 768px) {
 
+
+  /* do as universal selector */
+  /* wanna zero out margin and padding */
+  /* box-sizing border box - SHOULD BE FOR ENTIRE SITE  */
+
+  /* asterisk means all content on page - aka a universal selector */
+
+  *,
+
+*::before,
+*::after {
+  
+  box-sizing: border-box;
+  
+  }
+
+
+  html, body {
+
+  overflow-x: hidden;
+
+    }
+
   /*single-column */
   .page-grid {
+
     grid-template-columns: 1fr;
+
     grid-template-areas:
       "top"
       "left"
       "footer";
+
   }
 
   .left-cell {
@@ -136,7 +162,7 @@ ul {
     padding: 1rem;      /* small padding for breathing room */
     position: static; 
       /* sticky doesnt work on mobile really  */
-    overflow: visible;
+    overflow: hidden;
 
   }
 
@@ -150,8 +176,6 @@ ul {
     padding: 1rem;
     
   }
-
-  /* Footer adjustments (optional) */
   .footer {
 
     width: 100%;

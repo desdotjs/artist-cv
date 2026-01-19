@@ -106,11 +106,41 @@ ul {
  
 }
 
+.nav-menu a {
+
+  position: relative;
+  padding-left: 20px; /* space for the image */
+
+}
+
+.nav-menu a::before {
+
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 30px;        /* match your image size */
+  height: 30px;
+  transform: translateY(-50%);
+  background-image: url("/assets/ui_bullet.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+
+}
+
+.nav-menu a:hover::before {
+
+  opacity: 1;
+
+}
+
+
 .footer {
 
   width: 90%;
   margin: 0 auto;
-  padding: 50px;
+  padding: 80px;
 
   grid-area: footer;
 

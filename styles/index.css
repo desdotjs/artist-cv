@@ -123,12 +123,12 @@ ul {
 
   content: "";
   position: absolute;
-  left: 0;
+  left: -8px;
   top: 50%;
-  width: 30px;        /* match your image size */
-  height: 30px;
+  width: 18px;        /* match your image size */
+  height: 18px;
   transform: translateY(-50%);
-  background-image: url("/assets/ui_bullet.png");
+  background-image: url("/assets/nav_graphic.png");
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0;

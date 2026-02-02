@@ -42,6 +42,13 @@ h4 {
 
 }
 
+a {
+
+  text-decoration: underline;
+  color: #000;
+
+}
+
 
 /* paragraphs */
 p {
@@ -87,6 +94,8 @@ ul {
   position: sticky;
   overflow-x: hidden;
   justify-content: left;
+  z-index: 100;
+  /* had to add z-index because the stacking order of the page was not allowing me to click on project links. the nav-menu spans the width of the viewport, covering certain parts of the left-cell */
 
 }
 
@@ -98,6 +107,7 @@ ul {
   margin: 1.5rem 0;
 
 }
+
 
 .nav-menu {
 
@@ -113,35 +123,6 @@ ul {
  
 }
 
-.nav-menu a {
-
-  position: relative;
-  padding-left: 20px; /* space for the image */
-
-}
-
-/* .nav-menu a::before {
-
-  content: "";
-  position: absolute;
-  left: -8px;
-  top: 50%;
-  width: 18px;        /* match your image size */
-  /* height: 18px;
-  transform: translateY(-50%);
-  background-image: url("/assets/nav_graphic.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0;
-
-}
-
-.nav-menu a:hover::before {
-
-  opacity: 1;
-
-} */
-
 .footer {
 
   width: 90%;
@@ -153,71 +134,3 @@ ul {
 } */
 
 /* MEDIA QUERIES */
-
-@media (max-width: 768px) {
-
-
-  /* do as universal selector */
-  /* wanna zero out margin and padding */
-  /* box-sizing border box - SHOULD BE FOR ENTIRE SITE  */
-
-  /* asterisk means all content on page - aka a universal selector */
-
-  *,
-
-*::before,
-*::after {
-  
-  box-sizing: border-box;
-  
-  }
-
-
-  html, body {
-
-  overflow-x: hidden;
-
-    }
-
-  /*single-column */
-  .page-grid {
-
-    grid-template-columns: 1fr;
-
-    grid-template-areas:
-      "top"
-      "left"
-      "footer";
-
-  }
-
-  .left-cell {
-
-    width: 100%;
-    margin: 0;          /* remove large desktop margin */
-    padding: 1rem;      /* small padding for breathing room */
-    position: static; 
-      /* sticky doesnt work on mobile really  */
-    overflow: hidden;
-
-  }
-
-  /* Nav menu becomes inline at top */
-  .nav-menu {
-
-    position: static;
-    width: 100%;
-    text-align: right;
-    margin: 0;
-    padding: 1rem;
-    
-  }
-
-  .footer {
-
-    width: 100%;
-    padding: 2rem 1rem;
-
-  }
-
-}

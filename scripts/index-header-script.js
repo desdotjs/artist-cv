@@ -1,7 +1,11 @@
 
-const headerArt = [
+const headerArt = []
 
-]
+function preload() {
+
+    
+
+}
 
 let storedIndex = localStorage.getItem("headerArt");
 

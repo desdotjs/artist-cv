@@ -21,3 +21,4 @@ index++;
 if (index >= colors.length) index = 0;
 
 localStorage.setItem("colors", index);
+

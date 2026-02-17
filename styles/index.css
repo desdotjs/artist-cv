@@ -131,4 +131,15 @@ ul {
 
   grid-area: footer;
 
-} 
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+
+  .left-cell {
+    width: 90%;
+    margin: 40px auto;
+  }
+
+}

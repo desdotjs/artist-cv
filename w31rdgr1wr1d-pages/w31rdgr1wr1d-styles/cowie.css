@@ -1,22 +1,18 @@
 
 /* CSS "boilerplate" is actually called a "CSS reset" */
 
-@font-face {
+/* @font-face {
   
   font-family: 'Handwriting';
   src: url('w31rdgr1wr1d-static/handwriting-font.ttf');
 
-}
+} */
 
 body {
 
-  font-family: 'Handwriting', 'Times New Roman', Times, serif;
+  font-family: 'Handwriting';
   font-size: 16px;
   color: #000;
-
-  display: grid;
-  margin: 0 auto;
-  max-width: none;
 
 }
 

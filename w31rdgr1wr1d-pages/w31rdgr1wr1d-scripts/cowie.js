@@ -1,4 +1,53 @@
 
+// https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
+
+// CALLING BUILT IN CANVAS API
+
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+// getContext is a method that belongs to canvas
+// getElementID is a method that belongs to document - "hey browser, get me the element with the id of "canvas" (technically you could name it poopfart and it would still work)
+
+canvas.width  = window.innerWidth // window is a global object built-in the browser
+canvas.height = window.innerHeight // property that belongs to window
+
+// STORING IMAGES AS THEIR OWN OBJECTS
+
+const cowieImg = new Image();
+
+cowieImg.src = 'w31rdgr1wr1d-static/cowie.png';
+
+cowieImg.onload = () => {
+
+  draw();
+  console.log("cowie is ready! ^_^")
+
+};
+
+const textboxImg = new Image();
+
+textboxImg.src = 'w31rdgr1wr1d-static/textbox.png';
+
+textboxImg.onload = () => {
+  
+  draw();
+  console.log("cowie has thoughts to share!")
+
+};
+
+textboxImg.onload = () => { // empty parathesis = "this function has no parameters" (since... onload has no)
+
+    console.log("cowie has thoughts to share!")
+
+}
+
+// variable.property = (parameters) => { body }
+
+
+// onload is an event-handling property on the image object
+// . means access a property or method that belongs to this thing
+
+
 // AUDIO FILES OBJECT STORAGE
 
 const soundFiles = {
@@ -12,6 +61,7 @@ const soundFiles = {
     'g': new Audio('w31rdgr1wr1d-static/guh.wav'),
     'h': new Audio('w31rdgr1wr1d-static/huh.wav'),
     'i': new Audio('w31rdgr1wr1d-static/ee.wav'),
+    'j': new Audio('w31rdgr1wr1d-static/juh.wav'),
     'k': new Audio('w31rdgr1wr1d-static/kuh.wav'),
     'l': new Audio('w31rdgr1wr1d-static/luh.wav'),
     'm': new Audio('w31rdgr1wr1d-static/mmm.wav'),
@@ -30,14 +80,6 @@ const soundFiles = {
     'z': new Audio('w31rdgr1wr1d-static/zzz.wav'),
 
 }
-
-imagePaths = { // no loading yet - letting the script know where the images are
-
-    textboxImg: 'w31rdgr1wr1d-static/textbox.png',
-    cowie: 'w31rdgr1wr1d-static/cowie.png'
-
-}
-
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -65,3 +107,16 @@ document.addEventListener('keydown', (event) => {
   }
 
 })
+
+function draw() { 
+
+  // drawImage built-in canvas api method that draws an image on the canvas
+  // takes in parameters of (image, x, y)
+  // draw function, just like p5.js!
+
+
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.drawImage(cowieImg, 100, 100);
+  // ctx.drawImage(textboxImg, 200, 200);
+
+}

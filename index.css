@@ -16,16 +16,16 @@ body {
   display: grid; 
   /* for celled / forum-like feel */
   /* no inline... inline-grid makes cell behave like text, just "grid" makes cells behave as a page section */
-  grid-template-columns: minmax(0,4fr) minmax(0, 1fr);
+  grid-template-columns: 1fr;
   /* minmax prevents overflow on small screens */
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr auto;
   /* fr means "fractional unit" -  */
   /* so, 5 shares of space - could use percentages, but fr calculates automatically */
   grid-template-areas: 
 
-  "top top"
-  "left left"
-  "footer footer"
+  "top"
+  "left"
+  "footer"
 
 }
 
@@ -75,26 +75,40 @@ ul {
 
 }
 
-
-.header-img {
+/* left container / column */
+.top-cell {
 
   grid-area: top;
-  width: 90%;
-  text-align: center;
+  position: sticky;
+
+}
+
+.header-img img{
+
+  width: 70%;
+  display: block;
+  margin: auto;
+  padding: 0px 20px;
+  justify-content: center;
+  position: sticky;
+  transform: translateY(40px);
 
 }
 
 /* left container / column */
 .left-cell {
 
-  width: 50%;
-  margin: 100px;
+  /* width: 50%; */
+  /* margin: 100px; */
   text-align: left;
   grid-area: left;
   position: sticky;
   overflow-x: hidden;
   justify-content: left;
   z-index: 100;
+
+  width: min(800px, calc(100vw - 300px));
+  margin: 100px 0 100px 100px;
   /* had to add z-index because the stacking order of the page was not allowing me to click on project links. the nav-menu spans the width of the viewport, covering certain parts of the left-cell */
 
 }
@@ -111,8 +125,9 @@ ul {
 
 .nav-menu {
 
-  width: 90%;
-  margin: 0 auto;
+  width: 250px;
+  margin: 20px auto;
+  right: 40px;
   flex-direction: column;
   text-align: right;
   position: fixed; /* static, relative, fixed, sticky, absolute */
@@ -125,7 +140,6 @@ ul {
 
 .footer {
 
-  width: 90%;
   margin: 0 auto;
   padding: 80px;
 
@@ -138,8 +152,35 @@ ul {
 @media (max-width: 768px) {
 
   .left-cell {
-    width: 90%;
+    
+    text-align: left;
+    padding-right: 120px;
+    grid-area: left;
+    position: sticky;
+    width: min(800px, calc(100vw - 300px));
     margin: 40px auto;
+
   }
+
+  .nav-menu {
+    position: fixed;
+    width: 90%;
+    margin: 0 auto;
+    text-align: right;
+    top: 50%;
+    right: auto;
+  
+  }
+
+  .header-img img{
+
+  width: min(800px, calc(120vw - 250px));
+  display: block;
+  margin: auto;
+  padding: 0px 20px;
+  justify-content: center;
+  position: sticky;
+
+}
 
 }

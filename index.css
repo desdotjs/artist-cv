@@ -134,7 +134,7 @@ ul {
   position: fixed; /* static, relative, fixed, sticky, absolute */
   top: 50%;
   z-index: 1;
-  padding-right: 50px;
+  padding-right: 70px;
 
  /* can use transform / translate to perfectly center nav */
  /* review module 12 */
@@ -167,27 +167,39 @@ ul {
   }
 
   .nav-menu {
-
+/* 
     position: fixed;
-    width: 90%;
+    width: 250px;
     margin: 0 auto;
     text-align: right;
     top: 50%;
-    right: auto;
     overflow-x: hidden;
+    justify-self: right;
+    right: auto;
+    z-index: 1; */
 
+    width: 250px;
+    margin: 0 auto;
+    justify-self: right;
+    right: auto;
+    flex-direction: column;
+    text-align: right;
+    position: fixed; /* static, relative, fixed, sticky, absolute */
+    top: 50%;
+    z-index: 1;
+    padding-right: 20px;
   
   }
 
-  .header-img img{
+  .header-img img {
 
-  width: min(800px, calc(120vw - 250px));
-  display: block;
-  margin: auto;
-  padding: 0px 20px;
-  justify-content: center;
-  position: sticky;
+    width: min(800px, calc(120vw - 250px));
+    display: block;
+    margin: auto;
+    padding: 0px 20px;
+    justify-content: center;
+    position: sticky;
 
-}
+  }
 
 }

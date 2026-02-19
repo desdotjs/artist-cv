@@ -3,43 +3,43 @@
 
 // CALLING BUILT IN CANVAS API
 
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
+// const canvas = document.getElementById("canvas");
+// const ctx = canvas.getContext("2d");
 // getContext is a method that belongs to canvas
 // getElementID is a method that belongs to document - "hey browser, get me the element with the id of "canvas" (technically you could name it poopfart and it would still work)
 
-canvas.width  = window.innerWidth // window is a global object built-in the browser
-canvas.height = window.innerHeight // property that belongs to window
+// canvas.width  = window.innerWidth // window is a global object built-in the browser
+// canvas.height = window.innerHeight // property that belongs to window
 
 // STORING IMAGES AS THEIR OWN OBJECTS
 
-const cowieImg = new Image();
+// const cowieImg = new Image();
 
-cowieImg.src = 'w31rdgr1wr1d-static/cowie.png';
+// cowieImg.src = 'w31rdgr1wr1d-static/cowie.png';
 
-cowieImg.onload = () => {
+// cowieImg.onload = () => {
+// anonymous function is a function without a variable function such as onload
+//   draw();
+//   console.log("cowie is ready! ^_^")
 
-  draw();
-  console.log("cowie is ready! ^_^")
+// };
 
-};
+// const textboxImg = new Image();
 
-const textboxImg = new Image();
+// textboxImg.src = 'w31rdgr1wr1d-static/textbox.png';
 
-textboxImg.src = 'w31rdgr1wr1d-static/textbox.png';
-
-textboxImg.onload = () => {
+// textboxImg.onload = () => {
   
-  draw();
-  console.log("cowie has thoughts to share!")
+//   draw();
+//   console.log("cowie has thoughts to share!")
 
-};
+// };
 
-textboxImg.onload = () => { // empty parathesis = "this function has no parameters" (since... onload has no)
+// textboxImg.onload = () => { // empty parathesis = "this function has no parameters" (since... onload has no)
 
-    console.log("cowie has thoughts to share!")
+//     console.log("cowie has thoughts to share!")
 
-}
+// }
 
 // variable.property = (parameters) => { body }
 
@@ -108,15 +108,16 @@ document.addEventListener('keydown', (event) => {
 
 })
 
-function draw() { 
+// function draw() { 
 
   // drawImage built-in canvas api method that draws an image on the canvas
   // takes in parameters of (image, x, y)
   // draw function, just like p5.js!
 
+//   ctx.drawImage(cowieImg, 100, 100);
+//   ctx.drawImage(textboxImg, 200, 200);
 
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.drawImage(cowieImg, 100, 100);
-  // ctx.drawImage(textboxImg, 200, 200);
 
-}
+// }
+
+// jake lamb said ditch canvas :-(

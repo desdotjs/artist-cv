@@ -126,12 +126,15 @@ ul {
 .nav-menu {
 
   width: 250px;
-  margin: 20px auto;
-  right: 40px;
+  margin: 0 auto;
+  justify-self: right;
+  right: auto;
   flex-direction: column;
   text-align: right;
   position: fixed; /* static, relative, fixed, sticky, absolute */
   top: 50%;
+  z-index: 1;
+  padding-right: 50px;
 
  /* can use transform / translate to perfectly center nav */
  /* review module 12 */
@@ -159,16 +162,20 @@ ul {
     position: sticky;
     width: min(800px, calc(100vw - 190px));
     margin: 40px auto;
+    overflow-x: hidden;
 
   }
 
   .nav-menu {
+
     position: fixed;
     width: 90%;
     margin: 0 auto;
     text-align: right;
     top: 50%;
     right: auto;
+    overflow-x: hidden;
+
   
   }
 

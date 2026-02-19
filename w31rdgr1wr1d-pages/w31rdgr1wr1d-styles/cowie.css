@@ -16,3 +16,34 @@ body {
 
 }
 
+.header-container {
+
+  
+
+}
+
+.textbox-container {
+
+  display: inline;
+
+}
+
+.textbox-container img {
+
+  width: 30%;
+  height: auto;
+
+}
+
+.cowie-container {
+
+  display: inline;
+
+}
+
+.cowie-container img {
+
+  width: 20%;
+  height: auto;
+
+}

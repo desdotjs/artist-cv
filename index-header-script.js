@@ -17,3 +17,5 @@ if (index >= headerArt.length) index = 0;
 
 localStorage.setItem("headerArt", index);
 
+
+

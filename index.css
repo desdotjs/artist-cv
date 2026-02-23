@@ -20,12 +20,12 @@ body {
 
 }
 
-.header-container {
+.header-container { 
+  /* will be an image later  */
 
     font-family: 'my-handwriting';
     text-align: center;
     margin: 0 auto;
-    padding: 10px;
     font-size: 50px;
     width: 100%;
 

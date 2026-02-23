@@ -68,17 +68,19 @@ body {
 textarea {
 
   font-family: 'my-handwriting';
-  font-size: 75px;
+  text-align: center;
+  font-size: 70px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding-bottom: 140px;
-  width: 375px;
+  padding-bottom: 85px;
+  width: 345px;
   background: none;
-  top: 45%;
+  top: 42%;
   overflow: hidden;
   border: none;
   outline: none;
+  caret-color: transparent;
   
 }
 

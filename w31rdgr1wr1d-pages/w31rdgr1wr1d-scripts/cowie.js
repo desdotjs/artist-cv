@@ -3,36 +3,36 @@
 
 const soundFiles = {
 
-  'a': new Audio('w31rdgr1wr1d-static/cowie-static/ah.wav'),
-  'b': new Audio('w31rdgr1wr1d-static/cowie-static/buh.wav'),
-  'c': new Audio('w31rdgr1wr1d-static/cowie-static/kuh.wav'),
-  'd': new Audio('w31rdgr1wr1d-static/cowie-static/duh.wav'),
-  'e': new Audio('w31rdgr1wr1d-static/cowie-static/eh.wav'),
-  'f': new Audio('w31rdgr1wr1d-static/cowie-static/fuh.wav'),
-  'g': new Audio('w31rdgr1wr1d-static/cowie-static/guh.wav'),
-  'h': new Audio('w31rdgr1wr1d-static/cowie-static/huh.wav'),
-  'i': new Audio('w31rdgr1wr1d-static/cowie-static/ee.wav'),
-  'j': new Audio('w31rdgr1wr1d-static/cowie-static/juh.wav'),
-  'k': new Audio('w31rdgr1wr1d-static/cowie-static/kuh.wav'),
-  'l': new Audio('w31rdgr1wr1d-static/cowie-static/luh.wav'),
-  'm': new Audio('w31rdgr1wr1d-static/cowie-static/mmm.wav'),
-  'n': new Audio('w31rdgr1wr1d-static/cowie-static/nnn.wav'),
-  'o': new Audio('w31rdgr1wr1d-static/cowie-static/oh.wav'),
-  'p': new Audio('w31rdgr1wr1d-static/cowie-static/puh.wav'),
-  'q': new Audio('w31rdgr1wr1d-static/cowie-static/kwuh.wav'),
-  'r': new Audio('w31rdgr1wr1d-static/cowie-static/err.wav'),
-  's': new Audio('w31rdgr1wr1d-static/cowie-static/sss.wav'),
-  't': new Audio('w31rdgr1wr1d-static/cowie-static/tuh.wav'),
-  'u': new Audio('w31rdgr1wr1d-static/cowie-static/uh.wav'),
-  'v': new Audio('w31rdgr1wr1d-static/cowie-static/vuh.wav'),
-  'w': new Audio('w31rdgr1wr1d-static/cowie-static/wuh.wav'),
-  'x': new Audio('w31rdgr1wr1d-static/cowie-static/kss.wav'),
-  'y': new Audio('w31rdgr1wr1d-static/cowie-static/yuh.wav'),
-  'z': new Audio('w31rdgr1wr1d-static/cowie-static/zzz.wav'),
+  'a': new Audio('w31rdgr1wr1d-static/cowie/ah.wav'),
+  'b': new Audio('w31rdgr1wr1d-static/cowie/buh.wav'),
+  'c': new Audio('w31rdgr1wr1d-static/cowie/kuh.wav'),
+  'd': new Audio('w31rdgr1wr1d-static/cowie/duh.wav'),
+  'e': new Audio('w31rdgr1wr1d-static/cowie/eh.wav'),
+  'f': new Audio('w31rdgr1wr1d-static/cowie/fuh.wav'),
+  'g': new Audio('w31rdgr1wr1d-static/cowie/guh.wav'),
+  'h': new Audio('w31rdgr1wr1d-static/cowie/huh.wav'),
+  'i': new Audio('w31rdgr1wr1d-static/cowie/ee.wav'),
+  'j': new Audio('w31rdgr1wr1d-static/cowie/juh.wav'),
+  'k': new Audio('w31rdgr1wr1d-static/cowie/kuh.wav'),
+  'l': new Audio('w31rdgr1wr1d-static/cowie/luh.wav'),
+  'm': new Audio('w31rdgr1wr1d-static/cowie/mmm.wav'),
+  'n': new Audio('w31rdgr1wr1d-static/cowie/nnn.wav'),
+  'o': new Audio('w31rdgr1wr1d-static/cowie/oh.wav'),
+  'p': new Audio('w31rdgr1wr1d-static/cowie/puh.wav'),
+  'q': new Audio('w31rdgr1wr1d-static/cowie/kwuh.wav'),
+  'r': new Audio('w31rdgr1wr1d-static/cowie/err.wav'),
+  's': new Audio('w31rdgr1wr1d-static/cowie/sss.wav'),
+  't': new Audio('w31rdgr1wr1d-static/cowie/tuh.wav'),
+  'u': new Audio('w31rdgr1wr1d-static/cowie/uh.wav'),
+  'v': new Audio('w31rdgr1wr1d-static/cowie/vuh.wav'),
+  'w': new Audio('w31rdgr1wr1d-static/cowie/wuh.wav'),
+  'x': new Audio('w31rdgr1wr1d-static/cowie/kss.wav'),
+  'y': new Audio('w31rdgr1wr1d-static/cowie/yuh.wav'),
+  'z': new Audio('w31rdgr1wr1d-static/cowie/zzz.wav'),
 
 }
 
-const tc = document.querySelector("#text-container"); // container for text itself :P
+const tc = document.querySelector("textarea"); // container for text itself :P
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -50,12 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
       soundFiles[key].play()
 
     }
-
-    // if (event.key === "Backspace") {
-
-    //   tc.textContent.slice(0, -1)
-
-    // }
 
   })
 

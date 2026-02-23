@@ -2,7 +2,7 @@
 @font-face {
 
   font-family: 'my-handwriting';
-  src: url('/w31rdgr1wr1d-pages/w31rdgr1wr1d-static/cowie-static/cowie-font.ttf') format('truetype');
+  src: url('/w31rdgr1wr1d-pages/w31rdgr1wr1d-static/cowie/cowie-font.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 
@@ -29,40 +29,56 @@ body {
 
 }
 
-.textbox-container {
+#textbox-container {
 
-  display: inline;
-  width: 30%
-}
-
-.textbox-container img {
-
-  width: 30%;
-  height: auto;
-  position: relative
+  display: inline-block;
+  position: relative;
+  width: 26%;
+  transform: translateY(-350px) translateX(-30px);
 
 }
 
+/* with this setup, its better to control the size on the container so the image simply fills the space */
 
-.cowie-container {
+#textbox-container img {
 
-  display: inline;
-
-}
-
-.cowie-container img {
-
-  width: 20%;
+  width: 100%;
   height: auto;
 
+}
+
+
+#cowie-container {
+
+  display: inline-block;
+  padding-left: 250px;
+  padding-top: 120px;
 
 }
 
-input {
+#cowie-container img {
 
-  margin: 0.4rem 0;
+  width: 75%;
+  height: auto;
+  /* transform: scaleX(-1);  */
+  /* transform: scale allows you to mirror an image on an x or y axis */
+
+}
+
+textarea {
+
   font-family: 'my-handwriting';
-  font-size: 56px;
+  font-size: 75px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 140px;
+  width: 375px;
+  background: none;
+  top: 45%;
+  overflow: hidden;
+  border: none;
+  outline: none;
   
 }
 

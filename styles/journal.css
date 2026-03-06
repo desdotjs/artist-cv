@@ -1,0 +1,71 @@
+body {
+
+    font-family: 'Arial';
+    font-size: 16px;
+    color: #000;
+    display: flex;
+    margin: 0 auto;
+    max-width: none;
+    flex-direction: column;
+    background-color: lightpink;
+
+}
+
+@font-face {
+
+  font-family: 'my-handwriting';
+  src: url('../static/handwriting-font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.header-container { 
+
+    font-family: 'my-handwriting';
+    text-align: center;
+    font-size: 50px;
+
+}
+
+h2 { 
+
+    font-family: 'my-handwriting';
+    text-align: left;
+    position: sticky;
+    justify-content: left;
+    font-size: 32px;
+
+}
+
+.button-container {
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+}
+
+.button-container img {
+
+  width: 100px;
+  justify-content: center;
+
+}
+
+.journal-wrapper {
+    
+    position: sticky;
+    justify-content: left;
+    margin: 0 250px 0px 50px;
+    background-color: white;
+    border-radius: 6px;
+
+}
+
+.content-container {
+
+    text-align: left;
+    margin: 50px;
+
+}

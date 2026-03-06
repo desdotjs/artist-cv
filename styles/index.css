@@ -14,7 +14,7 @@ body {
 @font-face {
 
   font-family: 'my-handwriting';
-  src: url('static/handwriting-font.ttf') format('truetype');
+  src: url('../static/handwriting-font.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 

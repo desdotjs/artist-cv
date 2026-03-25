@@ -1,7 +1,7 @@
 body {
 
     font-family: 'Arial';
-    font-size: 16px;
+    font-size: 14px;
     color: #000;
     display: flex;
     margin: 0 auto;
@@ -24,7 +24,7 @@ body {
 
     font-family: 'my-handwriting';
     text-align: center;
-    font-size: 50px;
+    font-size: 46px;
 
 }
 
@@ -34,7 +34,7 @@ h2 {
     text-align: left;
     position: sticky;
     justify-content: left;
-    font-size: 32px;
+    font-size: 28px;
 
 }
 
@@ -56,16 +56,18 @@ h2 {
 .journal-wrapper {
     
     position: sticky;
-    justify-content: left;
-    margin: 0 250px 0px 50px;
+    display: flex;
     background-color: white;
     border-radius: 6px;
+    margin: 0 auto;
+    width: 90%;
 
 }
 
 .content-container {
 
     text-align: left;
-    margin: 50px;
+    margin: 30px;
+    justify-content: left;
 
 }
